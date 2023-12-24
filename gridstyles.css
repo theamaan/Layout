@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  background-color: rgb(57, 40, 40);
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(8, 200px);
+  gap: 0.4rem;
+  padding: 4rem;
+  /* Isme bhi hum justify-item: end/start/center ka use kr skte hai, isme hote ye hai ki saare ke saare item(list, in this case) apne cell mein end/start/center mein ho jaayengi*/
+  /* justify-items: center; */
+  /* yahi same kaam hum individual mein kr skte hai jaise neeche kiya hai ya phir direct container mein bhi laga diya to sbme ho jaata hai.  */
+}
+.list {
+  height: 100px;
+  width: 400px;
+  background-color: rgb(33, 181, 181);
+  border: 2px solid red;
+  justify-self: center;
+  /* Justify self apply hota hai child items ke upar, aur ye sb horizontal axis pe tha, vertical ke liye align self use krenge */
+  align-self: center;
+
+  /* Ek tareeka jo inn dono ko saath mein use krne ka hai wo hai place-self: center; :-> isse vertically aur horizontally center mein ho jaayega */
+}
